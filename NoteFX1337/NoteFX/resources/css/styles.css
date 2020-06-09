@@ -1,0 +1,112 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.notefx-icon {
+  -fx-graphic: url("/images/notepad.png");
+}
+
+.newicon > .label {
+	-fx-graphic: url("/images/Document-Blank-icon16.png");
+	-fx-graphic-text-gap: 12;
+	-fx-label-padding: 0 4  0 4;
+}
+
+.openfileicon> .label, .savefile > .label, .copytexticon > .label, .saveas > .label,
+.cuttexticon > .label, .pastetexticon > .label, .savefile > .label  {
+	-fx-background-size: 16px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 4;
+}
+
+.openfileicon > .label {
+	-fx-background-image: url("/images/Open_file-24x24.png");
+}
+
+.copytexticon > .label {
+	-fx-background-image: url("/images/copy64x64.png");
+}
+
+.cuttexticon > .label {
+	-fx-background-image: url("/images/cut64x64.png");
+}
+
+.pastetexticon > .label {
+	-fx-background-image: url("/images/paste64x64.png");
+}
+
+.savefile > .label {
+	-fx-background-image: url("/images/floppydisk-32.png");
+}
+
+.saveas > .label {
+	-fx-background-image: url("/images/save-as-42x42.png");
+}
+
+.exiticon > .label {
+	-fx-graphic: url("/images/exit16x16.png");
+	-fx-graphic-text-gap: 15;
+	-fx-label-padding: 0 4  0 4;
+}
+
+.abouticon > .label {
+	-fx-graphic: url("/images/about16x16.png");
+}
+
+.context-menu .accelerator-text{
+    -fx-graphic: none;
+    -fx-background-image:none;
+    -fx-label-padding: 0 4  0 20;
+}
+.toolbarNewButton {
+	-fx-graphic: url("/images/Document-Blank-icon16.png");
+	-fx-content-display: graphic-only;
+}
+/* 
+.toolbarOpenButton {
+	-fx-graphic: url("/images/Open_file-24x24.png");
+	-fx-content-display: graphic-only;
+	*/
+/*	
+	-fx-background-image: url("/images/Open_file-24x24.png");
+	-fx-content-display: graphic-only;
+	-fx-background-size: 16px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 4;
+	
+}
+*/
+/* */
+.button > .label {
+-fx-content-display: graphic-only;
+}
+
+
+.toolbarOpenButton, .toolbarSaveButton, .toolbarSaveAsButton {
+/*-fx-graphic: url("/images/Open_file-24x24.png");*/
+
+-fx-background-size: 16px;
+-fx-background-repeat: no-repeat;
+-fx-background-position: 50%;
+-fx-content-display: graphic-only;
+}
+.toolbarOpenButton {
+	-fx-background-image: url("/images/Open_file-24x24.png");
+}
+.toolbarSaveButton {
+	-fx-background-image: url("/images/floppydisk-32.png");
+}
+
+.toolbarSaveAsButton {
+	-fx-background-image: url("/images/save-as-42x42.png");
+}
+	
+
+.button {
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.button:hover{
+    -fx-background-color: transparent, rgba(0,0,0,.1), rgba(0,0,0,.1), transparent;
+}
+
+.button:armed {
+    -fx-background-color: transparent, rgba(0,0,0,.1), rgba(0,0,0,.1), rgba(0,0,0,.2);
+}

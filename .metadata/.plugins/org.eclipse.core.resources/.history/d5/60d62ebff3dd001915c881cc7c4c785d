@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+public class Tre {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); //starta scanner input
+		
+		System.out.println("Hur många liter vatten ska kokas?");
+		while(!input.hasNextInt()) {
+			input.next();
+			System.out.println("Ange endast hur många liter i siffror");
+		}
+		
+		int litre = input.nextInt();
+		
+	}
+
+}
+
+
+/*Givet att:
+Q = M * (sluttemperatur – starttemperatur) * 4184
+Där M är vattnets vikt i kilo, temperaturer mäts i Celsius och energin Q mäts i joules.
+User story
+Som miljömedveten tedrickare vill jag veta hur mycket energi det går åt att värma mitt tevatten, genom att mata in start- och sluttemperatur samt hur mycket vatten jag kokar.
+*/

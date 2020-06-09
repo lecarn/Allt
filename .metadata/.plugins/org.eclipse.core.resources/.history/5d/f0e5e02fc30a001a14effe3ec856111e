@@ -1,0 +1,19 @@
+package ovningar;
+
+public class Matte	{
+	String name = "";
+	private List<matteList> matteList;
+
+	Matte (){}
+
+	Matte(String incName){
+		this.name = incName;
+	}
+	
+	public void setName(String incName) {
+		this.name = incName;
+	}
+	public String getName() {
+		return name;
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;notefx/NoteFX/src/notefx&apos; to &apos;src&apos;" description="Rename resource &apos;notefx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="NoteFX/src/notefx" name="src" stamp="1570690529950" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;notefx/NoteFX/src&apos; to &apos;NoteFX&apos;" description="Rename resource &apos;src&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="NoteFX/src" name="NoteFX" stamp="1570690550574" updateReferences="true"/>
+</session>

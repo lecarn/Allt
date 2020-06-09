@@ -1,0 +1,105 @@
+package notefx;
+
+import java.util.ResourceBundle;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.MenuBar;
+import javafx.scene.image.Image;
+import javafx.scene.input.InputEvent;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.stage.Stage;
+
+
+public class MenuController implements Initializable
+{
+	@FXML
+	private MenuBar menuBar;
+
+
+	/**
+	 * Hanterar händelsen när skickas "About" i menu item.
+	 * Händelsen specificeras/kopplas i FXML
+	 * 
+	 * @param event Event on "About" menu item. 
+	 */
+	@FXML
+	private void handleAboutAction(final ActionEvent event)
+	{
+		provideAboutFunctionality();
+	}
+
+
+	/**
+	 * Hanterar händelsen när skickas "About" i menu item.
+	 * Händelsen specificeras/kopplas i FXML
+	 * 
+	 * @param event Event on "About" menu item. 
+	 */
+	@FXML
+	private void handleExitAction(final ActionEvent event)
+	{
+
+		provideExitFunctionality();
+	}
+
+	/**
+	 * Hantera alla input händelser. I detta fall hanteras speciellt
+	 * tangentbords tryckningar i detta fall CTRL-händelser.
+	 * 
+	 * @param event Input event.
+	 */
+	@FXML
+	private void handleKeyInput(final InputEvent event)
+	{
+		if (event instanceof KeyEvent)
+		{
+			final KeyEvent keyEvent = (KeyEvent) event;
+			// exempel på hur man hanterar CTRL-A
+			if (keyEvent.isControlDown() && keyEvent.getCode() == KeyCode.A)
+			{
+				provideAboutFunctionality();
+			}
+			if (keyEvent.isControlDown() && keyEvent.getCode() == KeyCode.E)
+			{
+				provideExitFunctionality();
+			}
+			// Här skall kod för tex CTRL-S (spara skrivas) enligt ovan mönster....
+		}
+	}
+
+	/**
+	 * Funktion som utför det som skall utföras när About väljs eller 
+	 * CTRL-A trycks på tangentbordet 
+	 */
+	private void provideAboutFunctionality()
+	{  
+		Alert alert = new Alert(AlertType.INFORMATION);
+
+		((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image("/images/notepad.png")); 
+
+		String javaVersion = System.getProperty("java.version");
+		String javafxVersion = System.getProperty("javafx.version");
+
+		alert.setTitle("NoteFX");
+		alert.setHeaderText("About NoteFX");	  
+		alert.setContentText("JavaFX " + javafxVersion + "Application\nRunning on Java " + javaVersion + "." );
+		alert.show();
+	}
+
+
+	private void provideExitFunctionality()
+	{
+		Platform.exit();
+		System.exit(0);
+	}
+	@Override
+	public void initialize(java.net.URL arg0, ResourceBundle arg1) {
+		menuBar.setFocusTraversable(true);
+	}   
+}

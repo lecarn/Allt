@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.*?>
+ <?import javafx.geometry.Insets?>
+ 
+<VBox id="vbox" prefHeight="400" prefWidth="800"
+	stylesheets="/css/styles.css"
+	xmlns:fx="http://javafx.com/fxml"
+	fx:controller="notefx.MenuController">
+    <MenuBar fx:id="menuBar" onKeyPressed="#handleKeyInput">
+      <menus>
+         <Menu text="File">
+            <items>
+               <MenuItem text="New" styleClass="newicon"/>
+               <MenuItem text="          Open" styleClass="openfileicon" fx:id="fileOpen" onAction="#handleOpenAction"/>
+               <MenuItem text="          Save" styleClass="savefile" onAction="#handleSaveAction"/>
+               <MenuItem text="          Save As..." styleClass="saveas"/>
+               <SeparatorMenuItem  />
+               <MenuItem text="Exit" styleClass="exiticon" onAction="#handleExitAction"/>
+            </items>
+         </Menu>	
+         <Menu text="Edit">
+            <items>
+               <MenuItem text="Copy"/>
+               <MenuItem text="Cut"/>
+               <MenuItem text="Paste"/>
+            </items>
+         </Menu>
+         <Menu text="Help">
+            <items>
+               <MenuItem text="Search" disable="true" visible="false"/>
+               <MenuItem text="Online Manual" visible="false"/>
+               <SeparatorMenuItem />
+               <MenuItem text="About" styleClass="abouticon" onAction="#handleAboutAction"/>
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+	<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <VBox minHeight="-Infinity" minWidth="-Infinity" 
+            		AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextArea  fx:id="textArea" prefHeight="0" prefWidth="0"  VBox.vgrow="ALWAYS" promptText="Enter text...." />
+               </children>
+            </VBox>
+		<VBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+		</VBox.margin>
+    </AnchorPane>
+</VBox>

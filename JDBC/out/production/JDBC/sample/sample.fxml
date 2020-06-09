@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="726.0" prefWidth="940.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <GridPane gridLinesVisible="false" prefHeight="811.0" prefWidth="1117.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <AnchorPane prefHeight="271.0" prefWidth="795.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <TextField id="TextFieldTitle" fx:id="titleTextField" editable="true" layoutX="32.0" layoutY="39.0" prefHeight="30.0" prefWidth="223.0" promptText="Title" text="" />
+            <TextField id="TextFieldTitle" fx:id="descriptionTextField" editable="true" layoutX="32.0" layoutY="99.0" prefHeight="30.0" prefWidth="223.0" promptText="description" text="" />
+            <TextField id="TextFieldTitle" fx:id="releaseYearTextField" editable="true" layoutX="32.0" layoutY="241.0" prefHeight="30.0" prefWidth="223.0" promptText="Release year" text="" />
+            <TextField id="TextFieldTitle" fx:id="rentalRateTextField" editable="true" focusTraversable="true" layoutX="280.0" layoutY="241.0" mouseTransparent="false" prefHeight="30.0" prefWidth="223.0" promptText="Rental Rate" text="" visible="true" />
+            <TextField id="TextFieldTitle" fx:id="lengthTextField" editable="true" layoutX="32.0" layoutY="166.0" prefHeight="30.0" prefWidth="223.0" promptText="Length" text="" />
+            <TextField id="TextFieldTitle" fx:id="replacementCostTextField" editable="true" layoutX="280.0" layoutY="166.0" prefHeight="30.0" prefWidth="223.0" promptText="Replacement Cost" text="" />
+            <TextField id="TextFieldTitle" fx:id="ratingTextField" editable="true" layoutX="280.0" layoutY="39.0" prefHeight="30.0" prefWidth="223.0" promptText="Rating" text="" />
+            <TextField id="TextFieldTitle" fx:id="specialFeaturesTextField" editable="true" layoutX="280.0" layoutY="99.0" prefHeight="30.0" prefWidth="223.0" promptText="Special Features" text="" />
+            <Label id="titleLabel" fx:id="descriptionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="69.0" prefHeight="30.0" prefWidth="223.0" text="Description">
+              <font>
+                <Font size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label id="titleLabel" alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="32.0" layoutY="9.0" prefHeight="30.0" prefWidth="223.0" text="Title" wrapText="false" />
+            <Label id="titleLabel" fx:id="releaseYearLabel" alignment="CENTER" layoutX="32.0" layoutY="206.0" prefHeight="30.0" prefWidth="223.0" text="Release Year" />
+            <Label id="titleLabel" fx:id="rentalRateLabel" alignment="CENTER" contentDisplay="TOP" layoutX="280.0" layoutY="206.0" prefHeight="30.0" prefWidth="223.0" text="Rental Rate" />
+            <Label id="titleLabel" fx:id="lengthLabel" alignment="CENTER" layoutX="32.0" layoutY="136.0" prefHeight="30.0" prefWidth="223.0" text="Length" />
+            <Label id="titleLabel" fx:id="replacementCostLabel" alignment="CENTER" layoutX="280.0" layoutY="136.0" prefHeight="30.0" prefWidth="223.0" text="Replacement Cost" />
+            <Label id="titleLabel" fx:id="ratingLabel" alignment="CENTER" layoutX="280.0" layoutY="9.0" prefHeight="30.0" prefWidth="223.0" text="Rating" />
+            <Label id="titleLabel" fx:id="specialFeaturesLabel" alignment="CENTER" layoutX="280.0" layoutY="69.0" prefHeight="30.0" prefWidth="223.0" text="Special Features" />
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Button fx:id="nextButton" layoutX="30.0" layoutY="104.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="44.0" prefWidth="110.0" text="Next">
+              <font>
+                <Font size="20.0" fx:id="x2" />
+              </font>
+            </Button>
+            <Button id="nextButton" fx:id="previousButton" font="$x2" layoutX="148.0" layoutY="104.0" mnemonicParsing="false" onAction="#previousButtonOnAction" prefHeight="44.0" prefWidth="110.0" text="Previous" />
+            <Button id="nextButton" fx:id="firstButton" font="$x2" layoutX="30.0" layoutY="52.0" mnemonicParsing="false" onAction="#firstButtonOnAction" prefHeight="44.0" prefWidth="110.0" text="First" />
+            <Button id="nextButton" fx:id="saveButton" font="$x2" layoutX="30.0" layoutY="156.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefHeight="44.0" prefWidth="228.0" text="Save" />
+            <Button id="nextButton" fx:id="lastButton" font="$x2" layoutX="148.0" layoutY="52.0" mnemonicParsing="false" onAction="#lastButtonOnAction" prefHeight="44.0" prefWidth="110.0" text="Last" />
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <TextArea fx:id="actorsTextArea" layoutX="21.0" layoutY="27.0" prefHeight="342.0" prefWidth="490.0" promptText="Actors" wrapText="true" />
+          </children>
+        </AnchorPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="894.0" minWidth="10.0" prefWidth="636.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="559.0" minWidth="10.0" prefWidth="481.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="366.0" minHeight="10.0" prefHeight="366.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="540.0" minHeight="10.0" prefHeight="445.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="271.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

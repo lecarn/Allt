@@ -1,0 +1,14 @@
+package ovningar;
+
+public class Maintwo {
+
+	public static void main(String[] args) {
+		Matte gärtrud = new Matte();
+		Katt jerker = new Katt("Jerker", "Strorfräsare");
+		
+		jerker.setMatte(gärtrud);
+		
+
+	}
+
+}

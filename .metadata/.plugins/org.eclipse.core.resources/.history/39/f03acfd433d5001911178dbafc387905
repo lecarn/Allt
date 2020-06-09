@@ -1,0 +1,24 @@
+package test;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 10;
+		int y = 10;
+		
+		System.out.println("Nu räknar vi ner!");
+		
+		while (x==1) {
+			System.out.println(x);
+			x = x-1;
+		}
+		if (y==10) {
+			System.out.print("Nu är y=10");
+			y = y-1;
+		}else {
+			System.out.print("Y är inte 10");
+		}
+	}
+
+}

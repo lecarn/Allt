@@ -1,0 +1,55 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+public class Test {
+
+
+	    public static void main(String[] args) {
+
+	        int random = 1;
+	        double multi = 1;
+	        int count = 0;
+	        double total = 0;
+
+	        for (int i = 0; i < 8; i++) {
+	            count++;
+
+	            System.out.println("\r");
+	            multi = 0;
+	            for (int k = 8; k > i; k--)
+	                System.out.print("\t");
+	            //skapar mellanrum
+
+	            for (int l = 0; l < i; l++) {
+	                total = Math.pow(3, multi);
+	                int tmp = (int) total;
+	                System.out.print(tmp+ "\t");
+	                multi++;
+
+	            }
+	            // omvänder för funktionen för att räkna ner samtidigt spara jag högsta värdet som jag tar hit
+	            for (int q = 0; q < count; q++) {
+	                total = Math.pow(-3, multi);
+	                //använder if satsen för annars blev talet negativt och skrev ut en massa minus
+	                if (total < 0)
+	                    total *= -1;
+	                int tmp = (int) total;
+
+	                System.out.print(tmp+ "\t");
+	                multi--;
+
+	            }
+	            // close enough lol, det är ett stort hål i pyramiden och ja fattar inte varöfr
+
+	        }
+
+
+	    }
+	}

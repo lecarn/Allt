@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Uppgift_2_objektprogrammering:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Uppgift_2_objektprogrammering_jar</output-path>
+    <root id="archive" name="Uppgift_2_objektprogrammering.jar">
+      <element id="module-output" name="Uppgift_2_objektprogrammering" />
+    </root>
+  </artifact>
+</component>

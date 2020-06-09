@@ -1,0 +1,37 @@
+package ovningar;
+
+public class Hund{
+
+	String name = "";
+	String breed = "";
+	Matte matte;
+	
+	Hund(){}
+	Hund(String name, String breed){
+		this.name = name;
+		this.breed = breed;
+	}
+	public void show() {
+	System.out.println("Ditt djur heter "+ name +" och är av rasen "+ breed);
+	}
+	public void setName(String incName) {
+		this.name = incName;
+	}
+	public String getName(){
+		return name;
+	}
+	
+	public void setBreed(String incBreed) {
+		this.name = incBreed;
+	}
+	public String getBreed(){
+		return breed;
+	}
+	
+	public void setMatte(Matte incMatte)  {
+		this.matte = incMatte;
+	}
+	public Matte getMatte() {
+		return matte;
+	}
+}

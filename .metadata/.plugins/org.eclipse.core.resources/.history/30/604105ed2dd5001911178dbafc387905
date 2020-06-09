@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+public class HelloMethod {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Nummer ett?");
+		int value1 = input.nextInt();
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Nummer två?");
+		int value2 = input.nextInt();
+		
+		int valuetwo = bigger(value);
+		System.out.println(valuetwo);
+		
+		}
+	public static int bigger(int num1) {
+		num1 += num1;
+
+		return num1;
+	}
+
+}

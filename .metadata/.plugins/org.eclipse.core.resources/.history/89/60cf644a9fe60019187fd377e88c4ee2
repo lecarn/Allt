@@ -1,0 +1,51 @@
+package test;
+
+
+
+public class TvaTre {
+
+
+	public static void main(String[] args) {
+
+		int random = 1;
+		int multi = 1;
+		int count = 0;
+		int total = 0;
+
+		for (int i = 0; i < 8; i++) {
+			count++;
+			System.out.println("\r");
+			//skapar ny rad
+			multi = 0;
+			for (int k = 7; k > i; k--)
+				System.out.print("\t");
+			//skapar mellanrum
+
+			for (int l = 0; l < i; l++) {
+				total = (int) Math.pow(3, multi);
+				int tmp = (int) total;
+				//int tmp2 = (int) Math.;
+				System.out.print(tmp+ "\t");
+				multi++;
+
+			}
+			// omvänder för funktionen för att räkna ner samtidigt spara jag högsta värdet som jag tar hit
+//			for (int q = 0; q < count; q++) {
+//				total = (int) Math.pow(-3, multi);
+//
+//				if (total < 0)
+//					total *= -1;
+//				int tmp = (int) total;
+//				//använder if för att inte bli minus
+//
+//				System.out.print(tmp+ "\t");
+//				multi--;
+//
+//
+//			}
+
+		}
+
+
+	}
+}

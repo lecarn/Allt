@@ -1,0 +1,43 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.notefx-icon {
+  -fx-graphic: url("/images/notepad.png");
+}
+
+.newicon > .label {
+	-fx-graphic: url("/images/Document-Blank-icon16.png");
+	-fx-graphic-text-gap: 12;
+	-fx-label-padding: 0 4  0 4;
+}
+
+.openfileicon > .label {
+	-fx-background-image: url("/images/Open_file-24x24.png");
+	-fx-background-size: 16px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 4;
+}
+
+.savefile > .label {
+	-fx-background-image: url("/images/floppydisk-32.png");
+	-fx-background-size: 16px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 4;
+}
+
+.saveas > .label {
+	-fx-background-image: url("/images/save-as-42x42.png");
+	-fx-background-size: 16px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 4;
+}
+
+.exiticon > .label {
+	-fx-graphic: url("/images/exit16x16.png");
+	-fx-graphic-text-gap: 15;
+	-fx-label-padding: 0 4  0 4;
+}
+
+.abouticon > .label {
+	-fx-graphic: url("/images/about16x16.png");
+}
+
+

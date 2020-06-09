@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_221" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="balance">
+     <int>500</int>
+    </void>
+    <void property="createDate">
+     <string>2019/12/12 10:55:47</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="name">
+     <string>Klasse</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="balance">
+     <int>300</int>
+    </void>
+    <void property="createDate">
+     <string>2019/12/12 10:55:47</string>
+    </void>
+    <void property="id">
+     <int>2</int>
+    </void>
+    <void property="name">
+     <string>Basse</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="balance">
+     <int>400</int>
+    </void>
+    <void property="createDate">
+     <string>2019/12/12 10:55:47</string>
+    </void>
+    <void property="id">
+     <int>3</int>
+    </void>
+    <void property="name">
+     <string>Dasse</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="balance">
+     <int>1337</int>
+    </void>
+    <void property="createDate">
+     <string>2019/12/12 10:55:47</string>
+    </void>
+    <void property="id">
+     <int>1337</int>
+    </void>
+    <void property="name">
+     <string>lEEt</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="balance">
+     <int>7</int>
+    </void>
+    <void property="changeDate">
+     <string>2019/12/12 10:55:49</string>
+    </void>
+    <void property="changed">
+     <string>Last changed amount was: -1330. Change was made at: 2019/12/12 11:14:48</string>
+    </void>
+    <void property="changes">
+     <int>-1330</int>
+    </void>
+    <void property="createDate">
+     <string>2019/12/12 10:55:47</string>
+    </void>
+    <void property="id">
+     <int>7</int>
+    </void>
+    <void property="name">
+     <string>Mr. Bond</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="com.company.Account">
+    <void property="createDate">
+     <string>2019/12/12 12:47:17</string>
+    </void>
+    <void property="id">
+     <int>666</int>
+    </void>
+    <void property="name">
+     <string>Nesse</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

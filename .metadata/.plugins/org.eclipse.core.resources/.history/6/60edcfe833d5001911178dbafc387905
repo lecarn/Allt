@@ -1,0 +1,32 @@
+package test;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+
+
+	public static void main(String[] args) {
+
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Hur många tänder är borstade?");
+		int number_of_teeth = input.nextInt();
+		teeth(number_of_teeth);
+		
+		System.out.print("Klar, gör nu ren tandborsten");
+
+	}
+	public static void teeth(int number_of_teeth) {
+		if (number_of_teeth >=32) {
+			System.out.print("Tänder redan borstade");
+		}else{
+			while (number_of_teeth<=31) {
+				System.out.println("Borstar en tand");
+				number_of_teeth = number_of_teeth+1;
+				System.out.println("Tänder borstade "+number_of_teeth);
+			}	
+		} 
+		
+	}
+}
+

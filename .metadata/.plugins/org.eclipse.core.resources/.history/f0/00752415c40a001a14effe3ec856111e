@@ -1,0 +1,32 @@
+package ovningar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Katt loki = new Katt("loki", "huskatt");
+		Hund sammy = new Hund("sammy", "bland ras");
+		Matte bettan = new Matte("Bettan");
+		List<Husdjur> bettanList = new ArrayList<>();
+		
+		bettanList.add(sammy);
+		bettanList.add(loki);
+		
+		loki.show();
+		sammy.show();
+		
+		loki.setMatte(bettan);
+		loki.show();
+		sammy.setMatte(bettan);
+		System.out.println(sammy.getName() + sammy.getMatte().getName());
+		
+		System.out.println("Matte för Loki är " + loki.getMatte().getName());
+		
+		
+
+	}
+
+}

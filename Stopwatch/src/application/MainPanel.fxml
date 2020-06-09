@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="ap" prefHeight="565.0" prefWidth="383.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainPanelController">
+  <children>
+    <GridPane prefHeight="565.0" prefWidth="383.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <GridPane prefHeight="404.0" prefWidth="424.0" GridPane.rowIndex="1">
+          <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="startButton" layoutX="92.0" layoutY="14.0" mnemonicParsing="false" onAction="#onStartButton" prefHeight="48.0" prefWidth="200.0" text="Start/Stop" />
+              </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+              <children>
+                <TextArea fx:id="resultText" layoutX="14.0" layoutY="19.0" prefHeight="352.0" prefWidth="355.0" text="Date                                         Time" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="197.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="385.0" minHeight="10.0" prefHeight="385.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <AnchorPane prefHeight="140.0" prefWidth="383.0">
+          <children>
+            <Text fx:id="timerText" layoutX="156.0" layoutY="65.0" scaleX="4.370307648257638" scaleY="2.5590621904273787" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:000" />
+          </children>
+        </AnchorPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="277.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="458.0" minHeight="10.0" prefHeight="458.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+package ovningar;
+
+import java.util.List;
+
+public class Matte	{
+	String name = "";
+	Katt katt;
+
+
+	Matte (){}
+
+	Matte(String incName, List<Hund> hundList){
+		this.name = incName;
+		this.hundList = hundList;
+	}
+
+	public List<Hund> getHundList(){
+		return hundList;
+	}
+	
+	
+	public void setName(String incName) {
+		this.name = incName;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public void setKatt(Katt incKatt) {
+		this.katt = incKatt;
+	}
+	
+	public Katt getKatt() {
+		return katt;
+	}
+
+}

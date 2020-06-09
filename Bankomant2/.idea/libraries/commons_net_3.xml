@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="commons-net-3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/skitJ/commons-net-3.6/commons-net-3.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/skitJ/commons-net-3.6/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/skitJ/commons-net-3.6/commons-net-3.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

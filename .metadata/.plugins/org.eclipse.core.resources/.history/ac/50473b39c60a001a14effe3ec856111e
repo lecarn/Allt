@@ -1,0 +1,11 @@
+package ovningar;
+
+public class Hund extends Husdjur{
+
+	Hund(){}
+
+	Hund(String name, String breed){
+		this.name = name;
+		this.breed = breed;
+	}
+}

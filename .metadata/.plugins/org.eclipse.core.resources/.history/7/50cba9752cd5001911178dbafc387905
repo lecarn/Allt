@@ -1,0 +1,16 @@
+package test;
+
+public class HelloMethod {
+
+	public static void main(String[] args) {
+		int value = 10;
+		int valuetwo = bigger(value);
+		System.out.println(valuetwo);
+	}
+	public static int bigger(int num1) {
+		num1 += num1;
+
+		return num1;
+	}
+
+}

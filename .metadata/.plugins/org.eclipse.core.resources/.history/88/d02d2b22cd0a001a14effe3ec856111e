@@ -1,0 +1,11 @@
+package ovningar;
+
+public class Katt extends Husdjur {
+	Katt(){}
+
+	Katt(String incName, String incBreed){
+		this.name = incName;
+		this.breed = incBreed;
+	}
+	
+}

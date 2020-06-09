@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class HelloMethod {
+
+	public static void main(String[] args) {
+		int value = 10;
+		int valuetwo = bigger(value);
+		System.out.println(valuetwo);
+		
+		Scanner input = new scanner(System.in);
+		System.out.print(Nummer 1);
+		int number1 = input.nextInt();
+		
+		}
+	public static int bigger(int num1) {
+		num1 += num1;
+
+		return num1;
+	}
+
+}

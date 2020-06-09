@@ -1,0 +1,8 @@
+Grey Filamentamount: 115for the price: 13225.0
+Black filamentamount: 123for the price: 14760.0 test 1
+Black filamentamount: 5for the price: 600.0
+Red Filamentamount: 2for the price: 250.0 test 2
+Black filamentamount: 45for the price: 5400.0
+Red Filamentamount: 55for the price: 6875.0
+Grey Filamentamount: 15for the price: 1725.0
+Red Filamentamount: 123for the price: 15375.0
